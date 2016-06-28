@@ -1,0 +1,17 @@
+//
+//  BaseClass-Prefix.pch
+//  BaseClass
+//
+//  Created by admin on 5/26/16.
+//  Copyright © 2016 admin. All rights reserved.
+//
+
+#ifndef BaseClass_Prefix_h
+#define BaseClass_Prefix_h
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#endif /* BaseClass_Prefix_h */

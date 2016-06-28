@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="243" id="VR4-vR-RCZ" customClass="BannerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VR4-vR-RCZ" id="b5T-XS-X8B">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quote2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JLr-h1-Z1O">
+                        <rect key="frame" x="10" y="5" width="300" height="180"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="GZv-5f-VnA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-Zz-lKi">
+                        <rect key="frame" x="11" y="204" width="151" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="151" id="V7E-kf-Wew"/>
+                            <constraint firstAttribute="height" constant="21" id="qF2-eQ-ArB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X6-HB-z2k">
+                        <rect key="frame" x="234" y="200" width="76" height="30"/>
+                        <color key="backgroundColor" red="0.027537620696504783" green="0.43515975062138479" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="o03-jh-m2M"/>
+                            <constraint firstAttribute="width" constant="76" id="tjZ-Oj-zqG"/>
+                        </constraints>
+                        <state key="normal" title="Install">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2X6-HB-z2k" firstAttribute="top" secondItem="JLr-h1-Z1O" secondAttribute="bottom" constant="15" id="E9u-gQ-y7V"/>
+                    <constraint firstItem="JLr-h1-Z1O" firstAttribute="top" secondItem="b5T-XS-X8B" secondAttribute="topMargin" constant="-3" id="M7A-v9-Oia"/>
+                    <constraint firstItem="6TZ-Zz-lKi" firstAttribute="top" secondItem="JLr-h1-Z1O" secondAttribute="bottom" constant="19" id="QQ7-5i-hDd"/>
+                    <constraint firstItem="6TZ-Zz-lKi" firstAttribute="leading" secondItem="b5T-XS-X8B" secondAttribute="leadingMargin" constant="3" id="VTd-D5-i04"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2X6-HB-z2k" secondAttribute="trailing" constant="2" id="Xt4-tZ-RyL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JLr-h1-Z1O" secondAttribute="trailing" constant="2" id="pfV-H4-qfT"/>
+                    <constraint firstItem="JLr-h1-Z1O" firstAttribute="leading" secondItem="b5T-XS-X8B" secondAttribute="leadingMargin" constant="2" id="qvh-na-Pcp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="coverView" destination="JLr-h1-Z1O" id="daZ-p3-iiR"/>
+                <outlet property="installButton" destination="2X6-HB-z2k" id="e25-DT-dCB"/>
+                <outlet property="nameLabel" destination="6TZ-Zz-lKi" id="fmB-tl-w0Z"/>
+            </connections>
+            <point key="canvasLocation" x="333" y="352.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="quote2.jpg" width="340" height="227"/>
+    </resources>
+</document>
